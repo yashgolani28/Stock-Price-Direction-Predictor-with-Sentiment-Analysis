@@ -1,0 +1,70 @@
+2025-05-13 12:20:03,037 - __main__ - INFO - Loading data from data/processed/combined_features.csv
+2025-05-13 12:20:03,064 - __main__ - INFO - Loaded data with shape: (741, 116)
+2025-05-13 12:20:03,064 - __main__ - INFO - Columns in DataFrame: ['Date', 'Close', 'High', 'Low', 'Open', 'Volume', 'Ticker', 'Close.1', 'High.1', 'Low.1', 'Open.1', 'Volume.1', 'Close.2', 'High.2', 'Low.2', 'Open.2', 'Volume.2', 'Close.3', 'High.3', 'Low.3', 'Open.3', 'Volume.3', 'Close.4', 'High.4', 'Low.4', 'Open.4', 'Volume.4', 'RSI_7', 'RSI_14', 'RSI_21', 'Stoch_K', 'Stoch_D', 'ROC_5', 'ROC_10', 'ROC_20', 'Williams_R', 'Awesome_Osc', 'RSI_Overbought', 'RSI_Oversold', 'Stoch_Overbought', 'Stoch_Oversold', 'SMA_10', 'SMA_20', 'SMA_50', 'SMA_100', 'SMA_200', 'EMA_10', 'EMA_20', 'EMA_50', 'EMA_100', 'EMA_200', 'MACD', 'MACD_Signal', 'MACD_Hist', 'ADX', 'ADX_Pos', 'ADX_Neg', 'CCI', 'Ichimoku_Base', 'Ichimoku_Conv', 'Ichimoku_A', 'Ichimoku_B', 'SMA_10_20_Cross', 'EMA_10_20_Cross', 'Golden_Cross', 'Death_Cross', 'MACD_Signal_Cross', 'Close_vs_SMA_50', 'Close_vs_SMA_200', 'BB_High_20', 'BB_Low_20', 'BB_Mid_20', 'BB_Width_20', 'BB_Pct_20', 'BB_High_50', 'BB_Low_50', 'BB_Mid_50', 'BB_Width_50', 'BB_Pct_50', 'ATR_14', 'ATR_20', 'Volatility_10', 'Volatility_20', 'Volatility_30', 'Normalized_Vol_10', 'Normalized_Vol_20', 'True_Range', 'BB_Upper_Touch', 'BB_Lower_Touch', 'OBV', 'ADI', 'CMF_10', 'CMF_20', 'Volume_MA_10', 'Volume_MA_20', 'Volume_MA_50', 'Volume_Ratio_10', 'Volume_Ratio_20', 'Up_Volume', 'Down_Volume', 'PVT', 'High_Volume', 'Low_Volume', 'Price_Change', 'Price_Change_1d', 'Price_Change_5d', 'Price_Change_10d', 'Log_Return', 'Next_Day_Return', 'Trend_Strength', 'Strong_Trend', 'Higher_High', 'Lower_Low', 'MA_Convergence', 'Bull_Signal', 'Bear_Signal']
+2025-05-13 12:20:03,064 - __main__ - INFO - Creating target variable based on next day returns
+2025-05-13 12:20:03,064 - __main__ - INFO - Created target variable from Next_Day_Return
+2025-05-13 12:20:03,064 - __main__ - INFO - Dropped 0 rows with NaN values
+2025-05-13 12:20:03,064 - __main__ - INFO - Selected 25 features from 25 potential features
+2025-05-13 12:20:03,064 - __main__ - INFO - Using features: ['RSI_14', 'Stoch_K', 'Stoch_D', 'ROC_10', 'Williams_R', 'SMA_10', 'SMA_50', 'EMA_20', 'MACD', 'MACD_Signal', 'ADX', 'BB_Width_20', 'ATR_14', 'Volatility_10', 'Volatility_20', 'OBV', 'CMF_10', 'Volume_Ratio_10', 'Price_Change', 'Price_Change_5d', 'Log_Return', 'Bull_Signal', 'Bear_Signal', 'Strong_Trend', 'MA_Convergence']
+2025-05-13 12:20:03,075 - __main__ - INFO - Data split: X_train=(592, 25), X_test=(149, 25)
+2025-05-13 12:20:03,078 - __main__ - INFO - Class distribution in training set: {1: 0.535472972972973, 0: 0.46452702702702703}
+2025-05-13 12:20:03,078 - __main__ - INFO - Starting model training...
+2025-05-13 12:20:03,079 - __main__ - INFO - Training XGBoost model...
+2025-05-13 12:20:03,079 - __main__ - ERROR - Error training model: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-05-13 12:20:03,079 - __main__ - ERROR - Error in main function: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+2025-05-13 12:24:18,554 - __main__ - INFO - Loading data from data/processed/combined_features.csv
+2025-05-13 12:24:18,571 - __main__ - INFO - Loaded data with shape: (741, 116)
+2025-05-13 12:24:18,571 - __main__ - INFO - Columns in DataFrame: ['Date', 'Close', 'High', 'Low', 'Open', 'Volume', 'Ticker', 'Close.1', 'High.1', 'Low.1', 'Open.1', 'Volume.1', 'Close.2', 'High.2', 'Low.2', 'Open.2', 'Volume.2', 'Close.3', 'High.3', 'Low.3', 'Open.3', 'Volume.3', 'Close.4', 'High.4', 'Low.4', 'Open.4', 'Volume.4', 'RSI_7', 'RSI_14', 'RSI_21', 'Stoch_K', 'Stoch_D', 'ROC_5', 'ROC_10', 'ROC_20', 'Williams_R', 'Awesome_Osc', 'RSI_Overbought', 'RSI_Oversold', 'Stoch_Overbought', 'Stoch_Oversold', 'SMA_10', 'SMA_20', 'SMA_50', 'SMA_100', 'SMA_200', 'EMA_10', 'EMA_20', 'EMA_50', 'EMA_100', 'EMA_200', 'MACD', 'MACD_Signal', 'MACD_Hist', 'ADX', 'ADX_Pos', 'ADX_Neg', 'CCI', 'Ichimoku_Base', 'Ichimoku_Conv', 'Ichimoku_A', 'Ichimoku_B', 'SMA_10_20_Cross', 'EMA_10_20_Cross', 'Golden_Cross', 'Death_Cross', 'MACD_Signal_Cross', 'Close_vs_SMA_50', 'Close_vs_SMA_200', 'BB_High_20', 'BB_Low_20', 'BB_Mid_20', 'BB_Width_20', 'BB_Pct_20', 'BB_High_50', 'BB_Low_50', 'BB_Mid_50', 'BB_Width_50', 'BB_Pct_50', 'ATR_14', 'ATR_20', 'Volatility_10', 'Volatility_20', 'Volatility_30', 'Normalized_Vol_10', 'Normalized_Vol_20', 'True_Range', 'BB_Upper_Touch', 'BB_Lower_Touch', 'OBV', 'ADI', 'CMF_10', 'CMF_20', 'Volume_MA_10', 'Volume_MA_20', 'Volume_MA_50', 'Volume_Ratio_10', 'Volume_Ratio_20', 'Up_Volume', 'Down_Volume', 'PVT', 'High_Volume', 'Low_Volume', 'Price_Change', 'Price_Change_1d', 'Price_Change_5d', 'Price_Change_10d', 'Log_Return', 'Next_Day_Return', 'Trend_Strength', 'Strong_Trend', 'Higher_High', 'Lower_Low', 'MA_Convergence', 'Bull_Signal', 'Bear_Signal']
+2025-05-13 12:24:18,573 - __main__ - INFO - Creating target variable based on next day returns
+2025-05-13 12:24:18,573 - __main__ - INFO - Created target variable from Next_Day_Return
+2025-05-13 12:24:18,573 - __main__ - INFO - Dropped 0 rows with NaN values
+2025-05-13 12:24:18,573 - __main__ - INFO - Selected 25 features from 25 potential features
+2025-05-13 12:24:18,576 - __main__ - INFO - Using features: ['RSI_14', 'Stoch_K', 'Stoch_D', 'ROC_10', 'Williams_R', 'SMA_10', 'SMA_50', 'EMA_20', 'MACD', 'MACD_Signal', 'ADX', 'BB_Width_20', 'ATR_14', 'Volatility_10', 'Volatility_20', 'OBV', 'CMF_10', 'Volume_Ratio_10', 'Price_Change', 'Price_Change_5d', 'Log_Return', 'Bull_Signal', 'Bear_Signal', 'Strong_Trend', 'MA_Convergence']
+2025-05-13 12:24:18,582 - __main__ - INFO - Data split: X_train=(592, 25), X_test=(149, 25)
+2025-05-13 12:24:18,582 - __main__ - INFO - Class distribution in training set: {1: 0.535472972972973, 0: 0.46452702702702703}
+2025-05-13 12:24:18,582 - __main__ - INFO - Starting model training...
+2025-05-13 12:24:18,582 - __main__ - ERROR - Error in main function: 'StockDirectionModel' object has no attribute 'train_model'
+2025-05-13 12:28:48,184 - __main__ - INFO - Loading data from data/processed/combined_features.csv
+2025-05-13 12:28:48,203 - __main__ - INFO - Loaded data with shape: (741, 116)
+2025-05-13 12:28:48,204 - __main__ - INFO - Columns in DataFrame: ['Date', 'Close', 'High', 'Low', 'Open', 'Volume', 'Ticker', 'Close.1', 'High.1', 'Low.1', 'Open.1', 'Volume.1', 'Close.2', 'High.2', 'Low.2', 'Open.2', 'Volume.2', 'Close.3', 'High.3', 'Low.3', 'Open.3', 'Volume.3', 'Close.4', 'High.4', 'Low.4', 'Open.4', 'Volume.4', 'RSI_7', 'RSI_14', 'RSI_21', 'Stoch_K', 'Stoch_D', 'ROC_5', 'ROC_10', 'ROC_20', 'Williams_R', 'Awesome_Osc', 'RSI_Overbought', 'RSI_Oversold', 'Stoch_Overbought', 'Stoch_Oversold', 'SMA_10', 'SMA_20', 'SMA_50', 'SMA_100', 'SMA_200', 'EMA_10', 'EMA_20', 'EMA_50', 'EMA_100', 'EMA_200', 'MACD', 'MACD_Signal', 'MACD_Hist', 'ADX', 'ADX_Pos', 'ADX_Neg', 'CCI', 'Ichimoku_Base', 'Ichimoku_Conv', 'Ichimoku_A', 'Ichimoku_B', 'SMA_10_20_Cross', 'EMA_10_20_Cross', 'Golden_Cross', 'Death_Cross', 'MACD_Signal_Cross', 'Close_vs_SMA_50', 'Close_vs_SMA_200', 'BB_High_20', 'BB_Low_20', 'BB_Mid_20', 'BB_Width_20', 'BB_Pct_20', 'BB_High_50', 'BB_Low_50', 'BB_Mid_50', 'BB_Width_50', 'BB_Pct_50', 'ATR_14', 'ATR_20', 'Volatility_10', 'Volatility_20', 'Volatility_30', 'Normalized_Vol_10', 'Normalized_Vol_20', 'True_Range', 'BB_Upper_Touch', 'BB_Lower_Touch', 'OBV', 'ADI', 'CMF_10', 'CMF_20', 'Volume_MA_10', 'Volume_MA_20', 'Volume_MA_50', 'Volume_Ratio_10', 'Volume_Ratio_20', 'Up_Volume', 'Down_Volume', 'PVT', 'High_Volume', 'Low_Volume', 'Price_Change', 'Price_Change_1d', 'Price_Change_5d', 'Price_Change_10d', 'Log_Return', 'Next_Day_Return', 'Trend_Strength', 'Strong_Trend', 'Higher_High', 'Lower_Low', 'MA_Convergence', 'Bull_Signal', 'Bear_Signal']
+2025-05-13 12:28:48,204 - __main__ - INFO - Creating target variable based on next day returns
+2025-05-13 12:28:48,204 - __main__ - INFO - Created target variable from Next_Day_Return
+2025-05-13 12:28:48,204 - __main__ - INFO - Dropped 0 rows with NaN values
+2025-05-13 12:28:48,204 - __main__ - INFO - Selected 25 features from 25 potential features
+2025-05-13 12:28:48,204 - __main__ - INFO - Using features: ['RSI_14', 'Stoch_K', 'Stoch_D', 'ROC_10', 'Williams_R', 'SMA_10', 'SMA_50', 'EMA_20', 'MACD', 'MACD_Signal', 'ADX', 'BB_Width_20', 'ATR_14', 'Volatility_10', 'Volatility_20', 'OBV', 'CMF_10', 'Volume_Ratio_10', 'Price_Change', 'Price_Change_5d', 'Log_Return', 'Bull_Signal', 'Bear_Signal', 'Strong_Trend', 'MA_Convergence']
+2025-05-13 12:28:48,211 - __main__ - INFO - Data split: X_train=(592, 25), X_test=(149, 25)
+2025-05-13 12:28:48,211 - __main__ - INFO - Class distribution in training set: {1: 0.535472972972973, 0: 0.46452702702702703}
+2025-05-13 12:28:48,214 - __main__ - INFO - Starting model training...
+2025-05-13 12:28:48,215 - __main__ - INFO - Training XGBoost model...
+2025-05-13 12:28:48,741 - __main__ - INFO - Model trained with 200 trees
+2025-05-13 12:28:48,741 - __main__ - INFO - Evaluating model...
+2025-05-13 12:28:48,741 - __main__ - INFO - Evaluating model performance...
+2025-05-13 12:28:48,756 - __main__ - INFO - Accuracy: 0.4161
+2025-05-13 12:28:48,756 - __main__ - INFO - ROC AUC: 0.4419
+2025-05-13 12:28:48,756 - __main__ - INFO - Confusion Matrix:
+[[27 51]
+ [36 35]]
+2025-05-13 12:28:48,767 - __main__ - INFO - Classification Report:
+              precision    recall  f1-score     support
+0              0.428571  0.346154  0.382979   78.000000
+1              0.406977  0.492958  0.445860   71.000000
+accuracy       0.416107  0.416107  0.416107    0.416107
+macro avg      0.417774  0.419556  0.414419  149.000000
+weighted avg   0.418281  0.416107  0.412942  149.000000
+2025-05-13 12:28:48,775 - __main__ - INFO - Top 10 important features:
+            Feature  Importance
+20       Log_Return    0.049609
+4        Williams_R    0.047044
+7            EMA_20    0.045657
+3            ROC_10    0.045003
+17  Volume_Ratio_10    0.044276
+2           Stoch_D    0.044169
+5            SMA_10    0.042725
+16           CMF_10    0.042652
+9       MACD_Signal    0.042525
+19  Price_Change_5d    0.042120
+2025-05-13 12:28:48,786 - __main__ - INFO - Model saved to models\xgboost_stock_direction_model.joblib
+2025-05-13 12:28:48,788 - __main__ - INFO - Scaler saved to models\feature_scaler.joblib
+2025-05-13 12:28:48,788 - __main__ - INFO - Feature list saved to models\feature_list.txt
+2025-05-13 12:28:50,299 - __main__ - INFO - Evaluation plots saved to results
+2025-05-13 12:28:50,299 - __main__ - INFO - Model training and evaluation completed successfully

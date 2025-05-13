@@ -1,0 +1,33 @@
+2025-05-13 12:15:34,003 - __main__ - INFO - Loading data from data/raw/combined_stock_data.csv
+2025-05-13 12:15:34,003 - __main__ - ERROR - File not found: data/raw/combined_stock_data.csv
+2025-05-13 12:15:34,003 - __main__ - INFO - Using fallback file path...
+2025-05-13 12:15:34,074 - __main__ - INFO - Loaded data with shape: (4211, 27)
+2025-05-13 12:15:34,074 - __main__ - INFO - Starting feature engineering process...
+2025-05-13 12:15:34,103 - __main__ - INFO - Preprocessed stock data successfully
+2025-05-13 12:15:34,137 - __main__ - INFO - Computed momentum indicators successfully
+2025-05-13 12:15:34,248 - __main__ - INFO - Computed trend indicators successfully
+2025-05-13 12:15:34,302 - __main__ - INFO - Computed volatility indicators successfully
+2025-05-13 12:15:34,313 - __main__ - INFO - Computed volume indicators successfully
+2025-05-13 12:15:34,325 - __main__ - INFO - Computed price changes successfully
+2025-05-13 12:15:34,325 - __main__ - WARNING - Column 'News_Sentiment' not found. Skipping sentiment analysis.
+2025-05-13 12:15:34,455 - __main__ - INFO - Created additional features successfully
+2025-05-13 12:15:34,474 - __main__ - INFO - Dropped 3469 rows with NaN values
+2025-05-13 12:15:34,474 - __main__ - INFO - Feature engineering completed with 116 features
+2025-05-13 12:15:34,476 - __main__ - INFO - DataFrame shape: (741, 116)
+2025-05-13 12:15:34,562 - __main__ - INFO - Saved processed data to data/processed/combined_features.csv
+2025-05-13 12:19:04,024 - __main__ - INFO - Loading data from data/raw/combined_stock_data.csv
+2025-05-13 12:19:04,046 - __main__ - INFO - Loaded data with shape: (4211, 27)
+2025-05-13 12:19:04,046 - __main__ - INFO - Columns in loaded DataFrame: ['Date', 'Close', 'High', 'Low', 'Open', 'Volume', 'Ticker', 'Close.1', 'High.1', 'Low.1', 'Open.1', 'Volume.1', 'Close.2', 'High.2', 'Low.2', 'Open.2', 'Volume.2', 'Close.3', 'High.3', 'Low.3', 'Open.3', 'Volume.3', 'Close.4', 'High.4', 'Low.4', 'Open.4', 'Volume.4']
+2025-05-13 12:19:04,046 - __main__ - INFO - Starting feature engineering process...
+2025-05-13 12:19:04,065 - __main__ - INFO - Preprocessed stock data successfully
+2025-05-13 12:19:04,085 - __main__ - INFO - Computed momentum indicators successfully
+2025-05-13 12:19:04,195 - __main__ - INFO - Computed trend indicators successfully
+2025-05-13 12:19:04,245 - __main__ - INFO - Computed volatility indicators successfully
+2025-05-13 12:19:04,263 - __main__ - INFO - Computed volume indicators successfully
+2025-05-13 12:19:04,269 - __main__ - INFO - Computed price changes successfully
+2025-05-13 12:19:04,278 - __main__ - WARNING - Column 'News_Sentiment' not found. Skipping sentiment analysis.
+2025-05-13 12:19:04,411 - __main__ - INFO - Created additional features successfully
+2025-05-13 12:19:04,421 - __main__ - INFO - Dropped 3469 rows with NaN values
+2025-05-13 12:19:04,422 - __main__ - INFO - Feature engineering completed with 116 features
+2025-05-13 12:19:04,422 - __main__ - INFO - DataFrame shape: (741, 116)
+2025-05-13 12:19:04,512 - __main__ - INFO - Saved processed data to data/processed/combined_features.csv
