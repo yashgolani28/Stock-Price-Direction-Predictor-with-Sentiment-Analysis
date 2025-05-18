@@ -57,7 +57,7 @@ stock-market-predictor/
 
   ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
   ```
 
 3. Install dependencies:
